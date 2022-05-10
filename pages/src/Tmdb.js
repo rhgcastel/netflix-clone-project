@@ -1,3 +1,6 @@
+const next = require('next');
+
+const api_key = next.punlic.vercel.env.API_KEY;
 const api_base = 'https://api.themoviedb.org/3';
 
 const basicFetch = async (endpoint) => {
@@ -7,8 +10,6 @@ const basicFetch = async (endpoint) => {
 }
 
 export const getHomeList = async () => {
-    const response = await fetch('http://localhost:5000/api_key')
-    const api_key = await response.json()
     return [
         {
             slug: 'originals',
@@ -53,8 +54,6 @@ export const getHomeList = async () => {
     ];
 }
 export const getMovieInfo= async (movieId, type) => {
-    const response = await fetch('http://localhost:5000/api_key')
-    const api_key = await response.json()
     let info = {};
 
     if (movieId) {
