@@ -1,0 +1,65 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.5s;
+}
+
+header.black {
+    background-color: #141414;
+}
+
+.header--logo {
+    margin-left: 30px;
+    height: 25px;
+}
+
+.header--leftside {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -650px;
+    font-size: 14px;
+}
+
+.header--leftside div:hover {
+    color:#e5e5e5;
+    cursor: pointer
+}
+
+.header--leftside div {
+    margin-right: 20px;
+}
+
+
+.header--rightside {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.header--rightside div {
+    margin-right: 20px;
+    cursor: pointer
+}
+
+.header--logo img {
+    height: 100%;
+}
+
+.header--user {
+    margin-right: 50px;
+    height: 30px; 
+}
+
+.header--user img {
+    height: 100%;
+    border-radius: 3px;
+}
