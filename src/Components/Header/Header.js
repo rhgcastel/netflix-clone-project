@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import SearchIcon from '@material-ui/icons/Search';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import SearchIcon from '@mui/icons-material/Search';
 
 function Header({ black }) {
     return (
