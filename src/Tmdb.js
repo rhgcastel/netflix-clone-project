@@ -1,4 +1,6 @@
-const api_key = vercel.env.API_KEY;
+const next = require('next');
+
+const api_key = next.punlic.vercel.env.API_KEY;
 const api_base = 'https://api.themoviedb.org/3';
 
 const basicFetch = async (endpoint) => {
