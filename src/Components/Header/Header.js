@@ -6,14 +6,16 @@ import SearchIcon from '@mui/icons-material/Search';
 function Header({ black }) {
     return (
         <header className={black ? 'black' : ''}>
+
+
+            <div className='header--leftside'>
             <div className='header--logo'>
                 <a href='/'>
                     <img src='https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg' alt='netflix-logo' />
                 </a>
             </div>
-
-            <div className='header--leftside'>
-                <div>
+            <div className='header--menu'>
+            <div>
                     <strong>Home</strong>
                 </div>
                 <div>
@@ -28,6 +30,7 @@ function Header({ black }) {
                 <div>
                     My List
                 </div>
+            </div>
             </div>
 
 

@@ -25,7 +25,6 @@ header.black {
 .header--leftside {
     display: flex;
     justify-content: space-around;
-    margin-left: -650px;
     font-size: 14px;
 }
 
